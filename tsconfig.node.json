@@ -18,7 +18,10 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    /* ? 新增这一行：让 TS 认得 Node 的全局变量 process */
+    "types": ["node"]
   },
   "include": ["vite.config.ts"]
 }
