@@ -45,6 +45,10 @@ const BRAND_INFO = {
   name: "NEXUS LABS",
 };
 
+// 🎯 【精准狙击】直接写在组件外面！
+// 这样网页刚打开、脚本刚加载时只会雷鸣般输出一次，后续雷打不动！
+console.log("哈哈哈");
+
 export default function App() {
   // 🔍 辅助函数：从浏览器的 URL 地址栏里精准切出当前的 Hash 值（形如 #careers -> careers）
   const getPageFromHash = () => {
